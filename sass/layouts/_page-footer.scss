@@ -1,0 +1,143 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+}
+
+.page-footer--container {
+  display: flex;
+  align-items: baseline;
+}
+
+/* address */
+
+.address {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+}
+.page-footer__logo--white {
+  color: var(--footer-logo-studio-color);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.address__link--coordinates {
+  color: var(--secondary-text-color);
+}
+
+.address__link--contact {
+  transition: color var(--transition-time-and-function);
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+/* /address */
+
+/* join */
+
+.join__title {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.socials__link--join {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.socials__icon--join {
+  fill: #ffffff;
+}
+
+/* /join */
+
+/* subscribe */
+
+.subscribe {
+  margin-left: auto;
+}
+
+.subscribe__container {
+  display: flex;
+}
+
+.subscribe__title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.subscribe__email {
+  width: 358px;
+  height: 50px;
+  padding: 16px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--bg-footer-color);
+  border-radius: 4px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe__btn-submit {
+  @extend %btn;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  .subscribe__icon {
+    margin-left: 10px;
+    fill: currentColor;
+  }
+}
