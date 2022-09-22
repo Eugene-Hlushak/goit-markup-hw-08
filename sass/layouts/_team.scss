@@ -1,16 +1,18 @@
 .team {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  // max-width: 1600px;
+  // margin-left: auto;
+  // margin-right: auto;
 
   text-align: center;
   background-color: var(--bg-team-section-color);
 }
 
-.team__list {
-  display: flex;
-  flex-basis: calc((100% - 90px) / 4);
-  column-gap: 30px;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-basis: calc((100% - 60px) / 2);
+    column-gap: 30px;
+  }
 }
 
 .team__member {
@@ -18,11 +20,16 @@
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .team__card-description {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team__name {

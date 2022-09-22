@@ -1,7 +1,10 @@
-.features__list {
-  display: flex;
-  flex-basis: calc((100% - 90px) / 4);
-  column-gap: 30px;
+@media screen and (max-width: 767px) {
+  .features__list:not(:last-child) {
+    margin-bottom: 30px;
+    // display: flex;
+    // flex-basis: calc((100% - 90px) / 4);
+    // column-gap: 30px;
+  }
 }
 
 .features__icon {
@@ -18,7 +21,7 @@
 .features__title {
   margin-bottom: 10px;
 
-  font-size: var(--features-font-size);
+  font-size: 16px;
   line-height: 1.14;
   text-transform: uppercase;
 
@@ -26,6 +29,6 @@
 }
 
 .features__text {
-  font-size: var(--features-font-size);
+  font-size: 16px;
   line-height: 1.71;
 }

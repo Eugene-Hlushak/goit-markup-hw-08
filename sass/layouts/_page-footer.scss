@@ -2,20 +2,21 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  text-align: center;
   background-color: #2f303a;
 }
 
-.page-footer--container {
-  display: flex;
-  align-items: baseline;
-}
+// .page-footer--container {
+//   display: flex;
+//   align-items: baseline;
+// }
 
 /* address */
 
-.address {
-  width: 231px;
-  margin-right: 70px;
-}
+// .address {
+//   width: 231px;
+//   margin-right: 70px;
+// }
 
 .page-footer__logo {
   margin-bottom: 20px;
@@ -24,8 +25,12 @@
   color: var(--footer-logo-studio-color);
 }
 
+.address__list {
+  margin-bottom: 60px;
+}
+
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address__link {
@@ -50,10 +55,15 @@
 /* /address */
 
 /* join */
+@media screen and (max-width: 767px) {
+  .join {
+    margin-bottom: 60px;
+  }
+}
 
 .join__title {
-  font-size: 14px;
   margin-bottom: 20px;
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 
@@ -77,21 +87,20 @@
 
 /* subscribe */
 
-.subscribe {
-  margin-left: auto;
-}
+// .subscribe {
+//   margin-left: auto;
+// }
 
-.subscribe__container {
-  display: flex;
-}
+// .subscribe__container {
+//   display: flex;
+// }
 
 .subscribe__title {
   display: block;
   margin-bottom: 20px;
-
+  text-align: center;
   font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--secondary-text-color);
@@ -104,7 +113,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--bg-footer-color);
   border-radius: 4px;
-  margin-right: 12px;
+  // margin-right: 12px;
 
   font-size: 16px;
   line-height: 1.25;
@@ -115,6 +124,10 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -131,7 +144,7 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-
+  text-align: center;
   color: #ffffff;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -139,5 +152,9 @@
   .subscribe__icon {
     margin-left: 10px;
     fill: currentColor;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
