@@ -5,6 +5,7 @@
 .page-header--container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 // .navigation {
@@ -23,8 +24,8 @@
 }
 
 .menu-btn {
-  margin-left: auto;
-  background-color: #fff;
+  background-color: transparent;
+  line-height: 0;
 }
 
 .menu-btn__icon {
