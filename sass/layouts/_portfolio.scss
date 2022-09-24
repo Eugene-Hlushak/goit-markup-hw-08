@@ -7,6 +7,11 @@
 .grid__item {
   // flex-basis: calc((100% - 60px) / 3);
   background-color: #ffffff;
+  @media screen and (max-width: 767px) {
+  }
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .product {

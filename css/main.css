@@ -314,12 +314,23 @@ button {
 .filters__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
   column-gap: 8px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .filters__list {
+    padding-right: 10px;
+    row-gap: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filters__list {
+    justify-content: center;
+  }
 }
 
 .filters__btn {
-  padding: 6px 22px;
+  padding: 6px 25px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -773,6 +784,9 @@ button {
 
 .grid__item {
   background-color: #ffffff;
+}
+.grid__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .product {
