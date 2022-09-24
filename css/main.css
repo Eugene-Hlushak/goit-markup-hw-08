@@ -119,25 +119,6 @@ button {
   color: var(--accent-color);
 }
 
-.menu {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-}
-
-.menu__container {
-  position: relative;
-}
-
-.menu__btn--close {
-  position: absolute;
-  background-color: transparent;
-  line-height: 0;
-}
-
 .socials {
   display: flex;
   justify-content: center;
@@ -177,6 +158,8 @@ button {
 }
 
 .modal-window {
+  position: relative;
+  width: 100%;
   padding: 40px;
   background: #ffffff;
   border-radius: 4px;
@@ -360,7 +343,7 @@ button {
 .form__text {
   margin: 0;
   font-size: 12px;
-  line-height: 1.71;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   color: #757575;
 }
