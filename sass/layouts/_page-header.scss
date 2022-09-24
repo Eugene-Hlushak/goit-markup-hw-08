@@ -26,6 +26,11 @@
     fill: var(--accent-color);
   }
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn-open {
+    display: none;
+  }
+}
 
 // .navigation {
 //   display: flex;
