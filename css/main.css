@@ -500,6 +500,13 @@ button {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .page-header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 87px;
+  }
+}
 
 .page-header__logo--black {
   color: var(--header-logo-studio-color);
@@ -517,6 +524,11 @@ button {
     display: none;
   }
 }
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .navigation__list {
   display: flex;
   align-items: center;
@@ -558,17 +570,13 @@ button {
     display: none;
   }
 }
-.contacts {
-  display: flex;
-  margin-left: auto;
-  column-gap: 50px;
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -576,6 +584,14 @@ button {
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
+}
+
+.contacts__link-tel {
+  padding-top: 21px;
+}
+
+.contacts__link-mail {
+  padding-bottom: 21px;
 }
 
 .contacts__icon {
@@ -598,11 +614,26 @@ button {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-bg.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/jpeg/mobile/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #c4c4c4;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/jpeg/mobile/hero-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/jpeg/tablet/hero-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/jpeg/tablet/hero-tablet@2x.jpg");
+  }
 }
 
 .hero__title {
