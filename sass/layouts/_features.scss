@@ -20,8 +20,7 @@
 
 .features__title {
   margin-bottom: 10px;
-
-  font-size: 16px;
+  font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
 
@@ -29,6 +28,5 @@
 }
 
 .features__text {
-  font-size: 16px;
   line-height: 1.71;
 }
