@@ -744,8 +744,12 @@ button {
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
-    flex-basis: calc((100% - 60px) / 2);
-    column-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .team__member {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 .team__member {
@@ -803,6 +807,11 @@ button {
 
 .clients__item {
   flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .clients__link {
@@ -896,6 +905,14 @@ button {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 768px) {
+  .page-footer--container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+}
 /* address */
 .page-footer__logo {
   margin-bottom: 20px;
@@ -983,7 +1000,7 @@ button {
 .subscribe__email::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .subscribe__email {
     margin-bottom: 20px;
   }
@@ -1009,7 +1026,7 @@ button {
   margin-left: 10px;
   fill: currentColor;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .subscribe__btn-submit {
     margin-left: auto;
     margin-right: auto;
