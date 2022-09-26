@@ -1,9 +1,8 @@
-@media screen and (max-width: 767px) {
-  .features__list:not(:last-child) {
-    margin-bottom: 30px;
-    // display: flex;
-    // flex-basis: calc((100% - 90px) / 4);
-    // column-gap: 30px;
+.features__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -29,4 +28,16 @@
 
 .features__text {
   line-height: 1.71;
+}
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .features__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
