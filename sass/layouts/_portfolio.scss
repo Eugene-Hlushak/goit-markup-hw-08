@@ -1,11 +1,4 @@
-// .grid {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 30px;
-// }
-
 .grid__item {
-  // flex-basis: calc((100% - 60px) / 3);
   background-color: #ffffff;
   @media screen and (max-width: 767px) {
   }
@@ -14,8 +7,29 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .grid__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  .product--growing {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .product__thumb--growing {
+    flex-grow: 1;
+  }
+}
+
 .product {
-  display: block;
   transition: box-shadow var(--transition-time-and-function);
 
   &:hover,

@@ -843,8 +843,25 @@ button {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .grid__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .product--growing {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .product__thumb--growing {
+    flex-grow: 1;
+  }
+}
 .product {
-  display: block;
   transition: box-shadow var(--transition-time-and-function);
 }
 .product:hover, .product:focus {
@@ -986,7 +1003,8 @@ button {
 }
 
 .subscribe__email {
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding: 16px 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -999,6 +1017,11 @@ button {
 }
 .subscribe__email::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .subscribe__email {
+    width: 450px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .subscribe__email {
