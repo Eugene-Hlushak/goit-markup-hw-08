@@ -19,6 +19,11 @@
     flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__member {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 
 .team__member {
   background-color: var(--bg-team-card-color);

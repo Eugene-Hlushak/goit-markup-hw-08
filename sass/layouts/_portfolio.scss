@@ -29,6 +29,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .grid__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
 .product {
   transition: box-shadow var(--transition-time-and-function);
 
