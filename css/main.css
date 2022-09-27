@@ -271,20 +271,22 @@ button {
   z-index: 100;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), visibility 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
   .backdrop {
-    padding: 93px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 .modal-window {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  top: 10%;
   width: 100%;
   padding: 40px;
   background: #ffffff;
@@ -298,6 +300,8 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .modal-window {
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 528px;
   }
 }
@@ -428,6 +432,7 @@ button {
   height: 120px;
   resize: none;
   padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -478,12 +483,12 @@ button {
   display: block;
 }
 
-.form__text {
+.form__accept-text {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
 @media screen and (max-width: 1199px) {
-  .form__text {
+  .form__accept-text {
     font-size: 12px;
     line-height: 1.15;
   }
