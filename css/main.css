@@ -378,6 +378,11 @@ button {
   text-align: center;
   color: var(--title-color);
 }
+@media screen and (min-width: 1200px) {
+  .form__title {
+    line-height: 1.15;
+  }
+}
 
 .form__field {
   margin-bottom: 10px;
