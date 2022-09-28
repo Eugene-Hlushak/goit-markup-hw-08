@@ -1,9 +1,10 @@
 .grid__item {
   background-color: #ffffff;
+
   @media screen and (max-width: 767px) {
-  }
-  &:not(:last-child) {
-    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -67,7 +68,7 @@
   height: 100%;
   padding: 63px 24px;
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--transition-time-and-function);
   background-color: rgba(33, 150, 243, 0.9);
 
