@@ -45,12 +45,20 @@
   }
 }
 
-.hero__title {
-  width: 360px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
+.hero--container {
+  @media screen and (min-width: 768px) {
+    padding-right: 150px;
+    padding-left: 150px;
+  }
 
+  @media screen and (min-width: 1200px) {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -60,7 +68,6 @@
   color: #ffffff;
 
   @media screen and (min-width: 1200px) {
-    width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
