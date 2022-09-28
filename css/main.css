@@ -876,6 +876,11 @@ button {
   padding-top: 30px;
   padding-bottom: 24px;
 }
+@media screen and (min-width: 1200px) {
+  .team__card-description {
+    padding-bottom: 30px;
+  }
+}
 
 .team__name {
   margin-bottom: 10px;
