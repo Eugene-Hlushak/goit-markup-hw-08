@@ -19,9 +19,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 92px;
+    margin-right: 93px;
   }
 }
 
@@ -122,6 +122,7 @@
   display: flex;
   align-items: center;
 
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -133,6 +134,7 @@
     color: var(--accent-color);
   }
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
     padding-top: 32px;
     padding-bottom: 32px;
   }

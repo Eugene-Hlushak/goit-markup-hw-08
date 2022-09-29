@@ -168,7 +168,6 @@ button {
     justify-content: space-between;
     padding: 48px 40px;
     width: 100%;
-    max-width: 480px;
     height: 100%;
     background-color: #fff;
   }
@@ -552,9 +551,9 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .page-header__logo {
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 92px;
+    margin-right: 93px;
   }
 }
 
@@ -641,6 +640,7 @@ button {
 .contacts__link {
   display: flex;
   align-items: center;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -651,6 +651,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
+    font-size: 14px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -701,13 +702,13 @@ button {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/jpeg/desktop/hero-desktop.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/jpeg/desktop/hero-desktop@2x.jpg");
-    max-width: 1600px;
   }
 }
 
@@ -1053,13 +1054,11 @@ button {
   }
 }
 
-.page-footer--container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-}
 @media screen and (min-width: 768px) {
   .page-footer--container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
     justify-content: space-evenly;
   }
 }
