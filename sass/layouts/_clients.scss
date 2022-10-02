@@ -26,11 +26,13 @@
   justify-content: center;
   align-items: center;
 
-  transition: border var(--transition-time-and-function);
+  transition: border var(--transition-time-and-function),
+    transform var(--transition-time-and-function);
 
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
+    transform: scale(1.2, 1.2);
   }
 }
 
