@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+
+    <!-- Шрифти -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -17,6 +21,13 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -25,7 +36,9 @@
     <header class="page-header">
       <div class="page-header--container container">
         <nav class="navigation">
-          <a class="logo page-header__logo link" href="./index.html"
+          <a
+            class="logo page-header__logo link animate__animated animate__backInLeft"
+            href="./index.html"
             >Web<span class="page-header__logo--black">Studio</span></a
           >
           <ul class="navigation__list list">
@@ -137,7 +150,9 @@
 
       <section class="hero section">
         <div class="container hero--container">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero__title animate__animated animate__zoomIn animate__delay-2s">
+            Ефективні рішення для вашого бізнесу
+          </h1>
           <button type="button" class="hero__btn-order-service" data-modal-open>
             Замовити послугу
           </button>
@@ -485,12 +500,12 @@
                     ./images/webp/mobile/team-member/team-member-03.webp    1x,
                     ./images/webp/mobile/team-member/team-member-03@2x.webp 2x
                   "
-                  type="image/webp"/>
+                  type="image/webp" />
                 <source
                   srcset="
                     ./images/jpeg/mobile/team-member/team-member-03.jpg    1x,
                     ./images/jpeg/mobile/team-member/team-member-03@2x.jpg 2x
-                  "/>
+                  " />
 
                 <img src="images/jpeg/mobile/team-member/team-member-03.jpg" alt="Микола Тарасов"
               /></picture>
@@ -565,12 +580,12 @@
                     ./images/webp/mobile/team-member/team-member-04.webp    1x,
                     ./images/webp/mobile/team-member/team-member-04@2x.webp 2x
                   "
-                  type="image/webp"/>
+                  type="image/webp" />
                 <source
                   srcset="
                     ./images/jpeg/mobile/team-member/team-member-04.jpg    1x,
                     ./images/jpeg/mobile/team-member/team-member-04@2x.jpg 2x
-                  "/>
+                  " />
                 <img src="images/jpeg/mobile/team-member/team-member-04.jpg" alt="Михайло Єрмаков"
               /></picture>
 
